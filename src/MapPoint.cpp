@@ -58,9 +58,9 @@ char* MapPoint::getName() const{
     return city;
 }
 
-MapPoint& MapPoint::closestPlace(MapPoint *p1,MapPoint *p2){
-    MapDist d1(*this,*p1);
-    MapDist d2(*this,*p2);
+const MapPoint& MapPoint::closestPlace(const MapPoint *p1, const MapPoint *p2) const{
+    const MapDist d1(*this,*p1);
+    const MapDist d2(*this,*p2);
 
     if(d1.angularDistance()>d2.angularDistance()){
         return *p2;
@@ -70,7 +70,7 @@ MapPoint& MapPoint::closestPlace(MapPoint *p1,MapPoint *p2){
     }
 }
 
-MapPoint inTheMiddle(MapPoint *p1, MapPoint *p2, char *name){
+MapPoint inTheMiddle(const MapPoint *p1, const MapPoint *p2, char *name){
     MapPoint obj(name, (p1->longitude+p2->longitude)/2, (p1->latitude+p2->latitude)/2);
     return obj;
 }

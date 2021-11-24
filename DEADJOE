@@ -1,0 +1,25 @@
+
+*** These modified files were found in JOE when it aborted on Wed Nov 24 22:06:39 2021
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/home/stud2020/0smeda/Desktop/Lab8/.git/COMMIT_EDITMSG
+
+*** File '/home/stud2020/0smeda/Desktop/Lab8/.git/COMMIT_EDITMSG'
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Dominik Smeda <0smeda@taurus.fis.agh.edu.pl>
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   ../include/MapPoint.h
+#	modified:   ../src/MapPoint.cqqq
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

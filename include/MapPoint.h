@@ -8,7 +8,7 @@ class MapDist;
 
 class MapPoint{
     friend class MapDist;
-    friend MapPoint inTheMiddle(MapPoint *p1, MapPoint *p2, char *name);
+    friend MapPoint inTheMiddle(const MapPoint *p1, const MapPoint *p2, char *name);
 
     public:
         MapPoint();
@@ -16,7 +16,7 @@ class MapPoint{
         MapPoint(const char *city, double longitude, double latitude);
         ~MapPoint();
 
-        MapPoint& closestPlace(MapPoint*p1,MapPoint*p2);
+        const MapPoint& closestPlace(const MapPoint*p1, const MapPoint*p2) const;
         char* getName() const;
         void print() const;
         void movePoint(double longitudeShift, double latitudeShift);
@@ -29,4 +29,4 @@ class MapPoint{
         void createCity(const char * city);
 };
 
-MapPoint inTheMiddle(MapPoint *p1, MapPoint *p2, char *name);
+MapPoint inTheMiddle(const MapPoint *p1, const MapPoint *p2, char *name);
